@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='./css/fullcalendar.css' rel='stylesheet' />
+<link href='./css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href='./css/css.css' rel='stylesheet'>
+<script src='./lib/moment.min.js'></script>
+<script src='./lib/jquery.min.js'></script>
+<script src='./js/lang/pt-br.js'></script>
+<script src='./js/fullcalendar.min.js'></script>
+<script>
+
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			
+			buttonText: {
+				today: 'Ir para a data de hoje',
+			},
+
+
+			monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+			monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    		dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabado'],
+    		dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+    		
+			events: [
+				//DEZEMBRO----------------------
+				{
+					title: 'Término do Período para requerer Provas Substitutivas - 2.º Semestre (Aluno On-line)',
+					start: '2015-12-02'
+				},
+				{
+					title: 'Início do prazo p/ solicitar análise curricular por Transferência Interna e Externa ',
+					start: '2015-12-03',
+				},
+				{
+					title: 'Provas Substitutivas - 2.º Semestre',
+					start: '2015-12-03',
+					end: '2015-12-10',
+				},
+				{
+					title: 'Prazo máximo para requerer Desistência de Matrícula',
+					start: '2015-12-10',
+				},
+				{
+					title: 'Término das Atividades Acadêmicas Complementares e Complementação de Conteúdos ',
+					start: '2015-12-10',
+				},
+				{
+					title: 'PROMAGISTER - Planejamento e Atividades Pedagógicas e Reuniões de CPTs',
+					start: '2015-12-10',
+				},
+				{
+					title: 'Encerramento do Ano Letivo',
+					start: '2015-12-10',
+				},
+				{
+					title: 'Início do período para efetivação da “MATRÍCULA ONLINE” (Veteranos)',
+					start: '2015-12-10',
+				},
+				{
+					title: 'Dia do Arquiteto e do Engenheiro',
+					start: '2015-12-11',
+					color: '#000',
+				},
+				{
+					title: 'Dia 11 Início do Recesso Acadêmico',
+					start: '2015-12-11',
+				},
+				{
+					title: 'Prazo máximo para lançamento das Notas das Provas Substitutivas no SINF',
+					start: '2015-12-12',
+				},
+				{
+					title: 'Feriado Municipal - Unidades de Toledo e Paranavaí',
+					start: '2015-12-14',
+					color: '#000',
+				},
+				{
+					title: 'Publicação das Notas das Provas Substitutivas e do Resultado Final no site',
+					start: '2015-12-15',
+				},
+				{
+					title: 'Término das Inscrições para os Cursos Especiais em Período de Férias',
+					start: '2015-12-17',
+				},
+				{
+					title: 'Feriado “Natal” - Recesso Administrativo',
+					start: '2015-12-24',
+					end: '2015-12-27',
+					color: '#FF0000',
+				},
+				{
+					title: 'Recesso Administrativo Feriado “Confraternização Universal',
+					start: '2015-12-31',
+					color: '#FF0000',
+				},
+				//-----------------------------------------
+			]
+		});
+	});
+</script>
+</head>
+<body>
+	<div class = "tudo">
+		<header>
+			<h1>Calendário Acadêmico <span class = "vermelho">UNIPAR</span> - 2016</h1>
+			<hr>
+		</header>
+		<div id='calendar'></div>
+		<hr>
+		<footer>
+			<p>
+				Este é um calendário <strong>não</strong> oficial da UNIPAR. Foi criado com o intúito de tornar mais acessível as principais datas acadêmicas, datas de provas e divulgação de notas.<br>
+				As informações aqui obtidas, foram retiradas do calendário oficial da UNIPAR disponível no site da instituição.<br>
+				Todas as datas estão sujeitas a mudanças.
+			</p>
+		</footer>
+	</div>
+
+</body>
+</html>
